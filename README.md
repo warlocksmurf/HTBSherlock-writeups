@@ -1,6 +1,6 @@
-# Hack the Boo 2023 - Competition Write-up for Forensics
+# Hack the Boo 2023 - Competition Forensics Writeups
 
-My write-up on Hack the Boo 2023 Competition (Forensics)
+
 
 ## Challenge: Trick or Treat
 
