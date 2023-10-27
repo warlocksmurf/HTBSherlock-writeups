@@ -32,6 +32,6 @@ Since we have the website content, we can decode it using the script in the mali
 
 ![VirusTotal](/images/ctf9.png)
 
-Executing the script will easily decode the data and obtain the full Powershell script and also the flag
+Executing the script will easily decode the data to obtain the full Powershell script and also the flag
 
 ![VirusTotal](/images/ctf10.png)
