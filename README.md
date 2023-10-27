@@ -1,6 +1,6 @@
 # Hack the Boo 2023 - Competition Forensics Writeups
 
-
+![VirusTotal](/images/htbpic.jpg)
 
 ## Challenge: Trick or Treat
 
