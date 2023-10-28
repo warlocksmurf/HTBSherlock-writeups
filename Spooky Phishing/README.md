@@ -12,19 +12,17 @@ Let us start analyzing the `<script>` tag in HTML is used to include JavaScript 
 1. `data`: - This specifies that the URL is a data URI. 
 2. `text/javascript;base64`: - This part of the URL indicates that the data is encoded as Base64 and represents `JavaScript` code.
 
-Hence, the whole section can be decoded from Base64.
+Hence, the whole section can be decoded from Base64 and the script code can then be analyzed further.
 
 <p align='center'>
   <img src='/images/phishing.png' alt="VirusTotal">
 </p>
 
-The script code can then be analyzed further.
+Notice how the script initiates two variables, `nn` and `aa`. These variables contain the result of the `decodeHex` function given the two hidden values as parameter each time, after the result of the `atob` function (atob decodes data that has been encoded with base64). 
 
 <p align='center'>
   <img src='/images/phishing3.png' alt="VirusTotal">
 </p>
-
-Notice how the script initiates two variables, `nn` and `aa`. These variables contain the result of the `decodeHex` function given the two hidden values as parameter each time, after the result of the `atob` function (atob decodes data that has been encoded with base64). 
 
 # Solution
 One way is to analyze the `decodeHex` function. By concatenating the two hidden strings in the html file and decoding it with Base64 first and then hex, the flag can be retrieved.
