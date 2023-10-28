@@ -1,7 +1,5 @@
 # Hack the Boo 2023 - Competition Writeups for Forensics Challenges
 
-Welcome to my first CTF write-up! In this document, I'll walk you through the solutions for all the Forensics challenges.
-
 <p align='center'>
   <img src='images/htbpic.jpg' alt="HTB">
 </p>
