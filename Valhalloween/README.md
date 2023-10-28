@@ -8,12 +8,6 @@ In this challenge, we are given a series of questions that must be answered to o
   <img src='/images/win11.png' alt="VirusTotal">
 </p>
 
-Hence, we selected some important event log files for further investigation.
-
-<p align='center'>
-  <img src='/images/win1.png' alt="VirusTotal">
-</p>
-
 # Solution
 1. What are the IP address and port of the server from which the malicious actors downloaded the ransomware? (for example: 98.76.54.32:443)
 * Answer: `103.162.14.116:8888`
