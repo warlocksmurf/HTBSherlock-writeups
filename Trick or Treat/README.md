@@ -43,5 +43,5 @@ Now we know that that the IP address `77.74.198.52` is responsible for the malic
 Since we know that the downloable content is encoded in hex and also XOR'ed, we can use `CyberChef` to extract the content.
 
 <p align='center'>
-  <img src='/images/flag1.png' alt="flag">
+  <img src='/images/flag.png' alt="flag">
 </p>
