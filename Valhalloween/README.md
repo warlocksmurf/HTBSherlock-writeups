@@ -2,7 +2,13 @@
 We are given the following file:
 * `Logs`: Directory containing various Windows XML EventLog (.evtx) files
 
-In this challenge, we are given a series of questions that must be answered to obtain the flag. These answers can all be located in certain event log files provided by HTB, hence we selected the most important ones for further investigation.
+In this challenge, we are given a series of questions that must be answered to obtain the flag. These answers can all be located in certain event log files provided by HTB.
+
+<p align='center'>
+  <img src='/images/win11.png' alt="VirusTotal">
+</p>
+
+Hence, we selected some important event log files for further investigation.
 
 <p align='center'>
   <img src='/images/win1.png' alt="VirusTotal">
