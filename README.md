@@ -31,3 +31,9 @@ Welcome to my first CTF write-up! In this document, I'll walk you through the so
 **Requirement:** Some knowledge on log analysis (pcap), OSINT, encoding techniques.
 
 [Solution](Trick%20or%20Treat)
+
+### Valhalloween
+
+**Requirement:** Some knowledge on log analysis (Windows Event Viewer), OSINT.
+
+[Solution](Valhalloween)
