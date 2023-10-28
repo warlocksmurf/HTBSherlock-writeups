@@ -11,7 +11,7 @@ Since the malicious file is provided by HTB, we can first gain additional inform
 
 Analyzing further, we can understand what kind of processes are executed by the malicious file and how it attacks a system.
 
-As shown in the picture below, the malicious file seems to download malicious data from `http://windowsliveupdater.com` using a random User-Agent for HTTP requests to essentially mask its identity on the network. It then sets the downloaded data into a variable (`$vurnwos`) and decodes it using a bitwise XOR operation. Finally, it executes the variable using `Invoke-Command`. It also attempts to execute an empty variable (`$asvods`).
+As shown in the picture below, the malicious file seems to download malicious data from `http://windowsliveupdater.com` using a random User-Agent for HTTP requests to essentially mask its identity on the network. It then sets the downloaded data into a variable (`$vurnwos`) and processes the characters in pairs and converts them from hexadecimal representation to their actual characters. It then performs a bitwise XOR operation with 0x1d on each character and the output is appended to the `$vurnwos` string. Finally, it executes the variable using `Invoke-Command`. It also attempts to execute an empty variable (`$asvods`).
 
 <p align='center'>
   <img src='/images/ctf3.png' alt="Process">
