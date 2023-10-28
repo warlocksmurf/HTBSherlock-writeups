@@ -15,7 +15,7 @@ Let us start analyzing the `<script>` tag in HTML is used to include JavaScript 
 Hence, the whole section can be decoded from Base64.
 
 <p align='center'>
-  <img src='/images/phishing2.png' alt="VirusTotal">
+  <img src='/images/phishing.png' alt="VirusTotal">
 </p>
 
 The script code can then be analyzed further.
