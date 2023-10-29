@@ -10,7 +10,7 @@ As we can see from the following image, the bat script contains many random vari
 
 # Solution
 
-First, the bat file will be analyzed using `any.run` which is a malware analyzer tool.
+First, the bat file can be analyzed using `Any.Run` which is a malware analyzer tool.
 We will get the following result if we upload the sample on the aforementioned site.
 
 <p align='center'>
