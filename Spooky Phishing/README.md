@@ -34,10 +34,6 @@ One way is to analyze the `decodeHex` function. By concatenating the two hidden 
 Another way is to just enter the website as it will redirect us to an error page with the flag present in its URL. However, this was just an error from HTB after getting confirmation from a HTB staff on Discord.
 
 <p align='center'>
-  <img src='/images/phishing5.png' alt="VirusTotal">
-</p>
-
-<p align='center'>
   <img src='/images/phishing6.png' alt="VirusTotal">
 </p>
 
