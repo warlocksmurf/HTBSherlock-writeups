@@ -33,7 +33,7 @@ To complete this question, we can analyze the `sysmon` log file and filter the l
 To complete this question, just put the ransomware's MD5 hash to any OSINT tool and check its family labels.
 
 <p align='center'>
-  <img src='/images/win4.png' alt="VirusTotal">
+  <img src='/images/win4osint.png' alt="VirusTotal">
 </p>
 
 4. What is the name of the task scheduled by the ransomware? (for example: WindowsUpdater)
