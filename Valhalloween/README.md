@@ -57,7 +57,10 @@ To complete this question, we can analyze the `sysmon` log file and check the ra
 6. Following the PPID, provide the file path of the initial stage in the infection chain. (for example: D:\Data\KCorp\FirstStage.pdf)
 * Answer: `C:\Users\HoaGay\Documents\Subjects\Unexpe.docx`
 
-To complete this question, we can analyze the `Security` log file again and check the Powershell script process again. As the question suggests, we can use the PPID to retrace the steps to the initial stage in the infection chain. As shown in the pictures below, we then stumble upon a malicious `.docx` file
+To complete this question, we need to find the root process that spawned the ransomware. Hence, we can use the PPID to retrace the steps to the initial stage in the infection chain. 
+
+The infection chain would look like this:<br>
+WINWORD.EXE with Unexpe.docx (7280) => cmd.exe (8776) => powershell.exe (3856) => mscalc.exe (7528)
 
 <p align='center'>
   <img src='/images/win7.png' alt="VirusTotal">
