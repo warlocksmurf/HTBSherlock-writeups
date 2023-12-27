@@ -4,17 +4,17 @@
 
 ## Practice Challenges
 ### Spooky Phishing
-[Solution](hacktheboo2023/Spooky%20Phishing)
+[Solution](Spooky%20Phishing)
 
 ### Bat Problems
-[Solution](hacktheboo2023/Bat%20Problems)
+[Solution](Bat%20Problems)
 
 ### Vulnerable Season
-[Solution](hacktheboo2023/Vulnerable%20Season)
+[Solution](Vulnerable%20Season)
 
 ## Competition Challenges 
 ### Trick or Treat
-[Solution](hacktheboo2023/Trick%20or%20Treat)
+[Solution](Trick%20or%20Treat)
 
 ### Valhalloween
-[Solution](hacktheboo2023/Valhalloween)
+[Solution](Valhalloween)
