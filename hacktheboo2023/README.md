@@ -17,4 +17,4 @@
 [Solution](Trick%20or%20Treat)
 
 ### Valhalloween
-[Solution](hacktheboo2023/Valhalloween/README.md)
+[Solution](Valhalloween/README.md)
