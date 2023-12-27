@@ -1,7 +1,7 @@
 # Hack the Boo 2023 - Competition Writeups for Forensics Challenges
 
 <p align='center'>
-  <img src='hacktheboo2023/images/htbpic.jpg' alt="HTB">
+  <img src='hacktheboo2023/images/htb.jpg' alt="HTB">
 </p>
 
 ## Practice Challenges
