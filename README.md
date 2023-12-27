@@ -1,4 +1,4 @@
-# Hack the Boo 2023 - CTF Writeups (Forensics Challenges)
+# Hack the Boo 2023 - CTF Writeups (Forensics)
 
 <p align='center'>
   <img src='images/htbpic.jpg' alt="HTB">
