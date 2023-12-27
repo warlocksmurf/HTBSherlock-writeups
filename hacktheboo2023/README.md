@@ -1,22 +1,20 @@
 # Hack the Boo 2023 - CTF Writeups (Forensics)
 
-<p align='center'>
-  <img src='images/htbpic.jpg' alt="HTB">
-</p>
+![HTB](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/324808be-3267-4226-8ab8-69a9dfb7be9c)
 
 ## Practice Challenges
 ### Spooky Phishing
-[Solution](Spooky%20Phishing)
+[Solution](hacktheboo2023/Spooky%20Phishing)
 
 ### Bat Problems
-[Solution](Bat%20Problems)
+[Solution](hacktheboo2023/Bat%20Problems)
 
 ### Vulnerable Season
-[Solution](Vulnerable%20Season)
+[Solution](hacktheboo2023/Vulnerable%20Season)
 
 ## Competition Challenges 
 ### Trick or Treat
-[Solution](Trick%20or%20Treat)
+[Solution](hacktheboo2023/Trick%20or%20Treat)
 
 ### Valhalloween
-[Solution](Valhalloween)
+[Solution](hacktheboo2023/Valhalloween)
