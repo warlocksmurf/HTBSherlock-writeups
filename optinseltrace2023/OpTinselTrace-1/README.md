@@ -74,7 +74,7 @@ Question: What is the search string for the first suspicious google search from 
 <br>Answer: `how to get around work security`
 
 Since I did not have a Google History viewer tool, I just manually analyze using Notepad 💀 Using Notepad, I managed to find suspicious search results.
-Path: ``\optinseltrace1\TriageData\C\users\Elfin\Appdata\Local\Google\Chrome\User Data\Default\History``
+<br>Path: ``\optinseltrace1\TriageData\C\users\Elfin\Appdata\Local\Google\Chrome\User Data\Default\History``
 
 ![elf9](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/a63dbd8d-d367-4bae-b6b1-50067369c7d8)
 
@@ -129,11 +129,14 @@ Question: The head elf PixelPeppermint has requested any passwords of Elfins to 
 
 Impacket (SAM) and MD5 cracker ftw.
 By using impacket, we can extract the SAM database in the System32 directory to crack passwords.
-Path: ``\optinseltrace1\TriageData\C\Windows\system32\config\SAM``
+<br>Path: ``\optinseltrace1\TriageData\C\Windows\system32\config\SAM``
 
 ![elf16](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/215eb681-5d52-4834-b92e-15b6cd56ece1)
 
-Command: ```python3 secretsdump.py -sam /optinseltrace1/TriageData/C/Windows/system32/config/SAM -system /optinseltrace1/TriageData/C/Windows/system32/config/SYSTEM LOCAL```
+Command: 
+```
+python3 secretsdump.py -sam /optinseltrace1/TriageData/C/Windows/system32/config/SAM -system /optinseltrace1/TriageData/C/Windows/system32/config/SYSTEM LOCAL
+```
 
 ![elf16 1](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/4d58923a-6fd8-4df2-b181-01422cf5191d)
 
