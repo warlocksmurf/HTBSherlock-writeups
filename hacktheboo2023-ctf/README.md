@@ -4,17 +4,17 @@
 
 ## Practice Challenges
 ### Spooky Phishing
-[Solution](Spooky%20Phishing/README.md)
+[Solution](Spooky%20Phishing.md)
 
 ### Bat Problems
-[Solution](Bat%20Problems/README.md)
+[Solution](Bat%20Problems.md)
 
 ### Vulnerable Season
-[Solution](Vulnerable%20Season/README.md)
+[Solution](Vulnerable%20Season.md)
 
 ## Competition Challenges 
 ### Trick or Treat
-[Solution](Trick%20or%20Treat/README.md)
+[Solution](Trick%20or%20Treat.md)
 
 ### Valhalloween
 [Solution](Valhalloween/README.md)
