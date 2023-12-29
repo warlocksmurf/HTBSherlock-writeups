@@ -4,19 +4,19 @@
 
 ## Sherlocks
 ### OpTinselTrace-1
-[Solution](OpTinselTrace-1/README.md)
+[Solution](OpTinselTrace-1.md)
 
 ### OpTinselTrace-2
-[Solution](OpTinselTrace-2/README.md)
+[Solution](OpTinselTrace-2.md)
 
 ### OpTinselTrace-3
-[Solution](OpTinselTrace-3/README.md)
+[Solution](OpTinselTrace-3.md)
 
 ### OpTinselTrace-4
-[Solution](OpTinselTrace-4/README.md)
+[Solution](OpTinselTrace-4.md)
 
 ### OpTinselTrace-5
-[Solution](OpTinselTrace-5/README.md)
+[Solution](OpTinselTrace-5.md)
 
 ## Final Results
 ![optinsel1](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/16faeb30-23d5-4372-b6f5-467e3e24e4ab)
