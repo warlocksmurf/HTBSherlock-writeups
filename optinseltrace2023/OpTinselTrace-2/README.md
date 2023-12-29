@@ -39,7 +39,22 @@ I just guessed it, have no idea how to solve this.
 Question: Which file did the Threat Actor locate some hard coded credentials within?
 <br>Answer: `claus.py`
 
-By checking the binary file, we can find the AWS URL and by entering inside it, we find a python script in the Bucket and it seems to be modified to remove hidden credentials.
+By checking the binary file, we can find the AWS URL and by entering inside it, we find a commit (COMMIT_EDITMSG) mentioning that claus.py was modified to remove credentials. This suggests that the hidden credentials were indeed stored in the python script.
+
+![image](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/ca0a1d9f-0055-4345-b6df-71ad857f562e)
+
+```
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Author:    Author Name <bytesparkle@papanoel.co.uk>
+#
+# On branch master
+# Changes to be committed:
+#	modified:   claus.py
+#
+Removed the sparkly creds from the script! How silly of me! Sometimes I'm about as useful as a screen saver on Santa's Sleigh!!!!!!
+```
 
 ![aws5](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/57b7e287-5121-4698-b612-54802a75cc0a)
 
@@ -79,6 +94,12 @@ Similar to Task 6.
 Question: Based on the analysis completed Santa Claus has asked for some advice. What is the ARN of the S3 Bucket that requires locking down?
 <br>Answer: `arn:aws:s3:::papa-noel`
 
-Similar to Task 5, checking the binary file we can find the ARM of the S3 Bucket.
+Similar to Task 5, checking the binary file we can find the ARM of the S3 Bucket or by using this command
+
+```
+find . -type f -exec jq '.Records[] | [.sourceIPAddress=="191.101.31.57", .eventName=="GetObject", .requestParameters.bucketName, .resources[0].ARN] | @tsv' {} \; | sort -u
+```
+
+![image](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/2009aa6d-767d-4d0a-9847-3da431babbac)
 
 ![aws9](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/eccec6e4-0a3b-494d-b9cc-89502e05a328)
