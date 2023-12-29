@@ -1,4 +1,4 @@
-![HackTheBox](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/94b0ebf5-7738-4598-bd05-ff3355908943)
+![hack-the-box](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/f1ce52b6-eab4-44f4-8cb3-ccf55d127064)
 
 ## CTFs
 [Hack The Boo 2023](hacktheboo2023-ctf/README.md)
