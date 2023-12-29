@@ -105,4 +105,4 @@ Since the question wants the original name, I had to extract this exe file and f
 Question: What is the name of the process targeted by procdump.exe?
 <br>Answer: `lsass.exe`
 
-Similar to Task 11.
+The powershell command from Task 11 shows the targeted process.
