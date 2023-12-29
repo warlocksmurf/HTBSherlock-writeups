@@ -10,9 +10,39 @@ Using Hayabusa, the evtx directory can be scanned to determine the vulnerability
 
 ```
 .\hayabusa-2.11.0-win-x64.exe csv-timeline -d 'C:\HTB\Optinseltrace\optinseltrace5\DC01.northpole.local-KAPE\uploads\auto\C%3A\Windows\System32\winevt' -o results.csv
+
+╔╗ ╔╦═══╦╗  ╔╦═══╦══╗╔╗ ╔╦═══╦═══╗
+║║ ║║╔═╗║╚╗╔╝║╔═╗║╔╗║║║ ║║╔═╗║╔═╗║
+║╚═╝║║ ║╠╗╚╝╔╣║ ║║╚╝╚╣║ ║║╚══╣║ ║║
+║╔═╗║╚═╝║╚╗╔╝║╚═╝║╔═╗║║ ║╠══╗║╚═╝║
+║║ ║║╔═╗║ ║║ ║╔═╗║╚═╝║╚═╝║╚═╝║╔═╗║
+╚╝ ╚╩╝ ╚╝ ╚╝ ╚╝ ╚╩═══╩═══╩═══╩╝ ╚╝
+   by Yamato Security
+
+Start time: 2023/12/29 14:41
+
+Total event log files: 146
+Total file size: 261.4 MB
+
+Scan wizard:
+
+✔ Which set of detection rules would you like to load? · 5. All event and alert rules (4270 rules) ( status: * | level: informational+ )
+✔ Include deprecated rules? (193 rules) · no
+✔ Include unsupported rules? (45 rules) · no
+✔ Include noisy rules? (12 rules) · no
+✔ Include sysmon rules? (2083 rules) · yes
+
 ```
 
-![win1](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/6122cd2d-9ea2-4987-9111-6e23fbb4cd42)
+![win1](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/98d66849-9602-4023-ba86-26881401ebc6)
+
+Hayabusa mentioned that most critical events happened on 13/12/2022. So I used Timeline Explorer to analyze the csv file from Hayabusa and found a suspicious logon from an unknown user (192.168.68.200) using an exploit called Zerologon.
+
+![image](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/fcc482fe-5133-4a57-9603-bda9ba046a52)
+
+Scrolling further down, the unknown user seems to perform Mimikatz DC Sync multiple times. So I googled it to confirm if it's related to Zerologon and it does!
+
+![image](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/c3d0d8de-3535-469d-888f-0d64a8f4aa76)
 
 ![win2](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/0ebb55bd-a1e0-4838-aff4-14f41c07d7f6)
 
@@ -24,14 +54,13 @@ Reading this [blog](https://0xbandar.medium.com/detecting-the-cve-2020-1472-zero
 
 > Successful exploitation resulting in a rest of the computer account password and it will be shown in security logs with event id 4742 “A computer account was changed”, password last set change, performed by Anonymous Logon.
 
-
 ![win2 1](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/8307d503-2500-485b-9f84-9f20da3d1fed)
 
 ## Task 3
 Question: What is the name of the executable related to the unusual service installed on the system around the time of the CVE exploitation?
 <br>Answer: `hAvbdksT.exe`
 
-Since we know the timeline of compromise in Task 2, the executable related to the "vulnerable_to_zerologon" service can be easily found in the System.evtx by filtering the time and eventID.
+Since we know the exact timeline for IoC, the executable related to the "vulnerable_to_zerologon" service can be easily found in the System.evtx by filtering the time and eventID.
 
 ![win3](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/e54e82e9-45ae-4e87-b078-7484cfeb94d0)
 
@@ -47,27 +76,29 @@ Similar to Task 3, just look for "vulnerable_to_zerologon" service starting.
 Question: What was the TA's IP address within our internal network?
 <br>Answer: `192.168.68.200`
 
-Using Hayabusa, we can find out the logon attempts and since we know there ANONYMOUS LOGON was one of them from Task 2, we can easily see the IP address.
-
-```
-.\hayabusa-2.11.0-win-x64.exe logon-summary -d 'C:\Users\ooiro\Documents\shared\HTB\Optinseltrace\optinseltrace5\DC01.northpole.local-KAPE\uploads\auto\C%3A\Windows\System32\winevt\Logs'
-```
-
-![win5](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/354b98c3-4f46-4448-b0e3-254c443e2244)
+Similar to Task 1, the TA's IP address can be identified from the malicious activity.
 
 ## Task 6 
 Question: Please list all user accounts the TA utilised during their access. (Ascending order)
 <br>Answer: `Administrator, Bytesparkle`
 
-Using Hayabusa, we can find out which account was compromised using the IP address from Task 5.
+Using Hayabusa, we can find out the logon attempts and since we already know the TA's IP address from Task 5, we just have to find the user accounts. So I just filter out the specific IP address to find the second user.
+
+```
+.\hayabusa-2.11.0-win-x64.exe logon-summary -d 'C:\HTB\Optinseltrace\optinseltrace5\DC01.northpole.local-KAPE\uploads\auto\C%3A\Windows\System32\winevt\Logs | Select-String 192.168.68.200'
+```
 
 ![win6](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/676b3958-cdf9-4c7e-9a14-0a66b0fd443a)
+
+To confirm this, we can refer back to Timeline Explorer to analyze the IP address connections.
+
+![image](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/ca59b54b-645e-4024-b962-cef531f01963)
 
 ## Task 7 
 Question: What was the name of the scheduled task created by the TA?
 <br>Answer: `svc_vnc`
 
-Just look for the Microsoft-Windows-TaskScheduler%254Operational.evtx log file and filter by eventID 106 (Task registered). Two schedule tasks was created and one of them was the answer.
+Just look for the Microsoft-Windows-TaskScheduler%254Operational.evtx file and filter by eventID 106 (Task registered). Two schedule tasks was created and one of them was suspicious.
 
 ![win7](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/f517c46e-1397-4c9d-9741-706dc1b7a367)
 
@@ -546,10 +577,8 @@ Analyzing the function, the encryption method was discovered to be a simple XOR 
 Question: Please confirm the process ID of the process that encrypted our files.
 <br>Answer: `5828`
 
-Using EVTXCmd, we can search for the file extension of encrypted files (.xmax). We discover that they were stored in the Microsoft-Windows-UAC-FileVirtualization/Operational channel. Hence, we can analyze the Microsoft-Windows-UAC-FileVirtualization/Operational.evtx file to obtain the process ID.
+Using the output from EVTXCmd and Timeline Explorer, we can filter by the file extension of encrypted files (.xmax) and discover that they were stored in the Microsoft-Windows-UAC-FileVirtualization/Operational channel. Hence, we can analyze the Microsoft-Windows-UAC-FileVirtualization/Operational.evtx file to obtain the process ID.
 
 ![win9](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/c1c564be-85e9-4850-9c1b-34527c3094d2)
 
 ![win9 1](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/7c5b26f8-53db-4cef-af70-f228c2ccd7c7)
-
-
