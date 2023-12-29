@@ -39,7 +39,7 @@ I just guessed it, have no idea how to solve this.
 Question: Which file did the Threat Actor locate some hard coded credentials within?
 <br>Answer: `claus.py`
 
-By checking the binary file, we can find the AWS URL "https://papa-noel.s3.eu-west-3.amazonaws.com/". In the AWS bucket, we find a commit (COMMIT_EDITMSG) mentioning that claus.py was modified to remove credentials. This suggests that the hidden credentials were indeed stored in the python script.
+By checking the binary file, we can find the AWS URL (https://papa-noel.s3.eu-west-3.amazonaws.com/). In the AWS bucket, we find a commit (COMMIT_EDITMSG) mentioning that claus.py was modified to remove credentials. This suggests that the hidden credentials were indeed stored in the python script.
 
 ![image](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/ca0a1d9f-0055-4345-b6df-71ad857f562e)
 
