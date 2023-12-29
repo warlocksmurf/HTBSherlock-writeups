@@ -39,9 +39,11 @@ I just guessed it, have no idea how to solve this.
 Question: Which file did the Threat Actor locate some hard coded credentials within?
 <br>Answer: `claus.py`
 
-By checking the binary file, we can find the AWS URL and by entering inside it, we find a python script in the Bucket. 
+By checking the binary file, we can find the AWS URL and by entering inside it, we find a python script in the Bucket and it seems to be modified to remove hidden credentials.
 
 ![aws5](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/57b7e287-5121-4698-b612-54802a75cc0a)
+
+![image](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/95dcdcb3-bdc0-4d54-848e-4ba9de1fc619)
 
 ## Task 6 
 Question: Please detail all confirmed malicious IP addresses. (Ascending Order)
