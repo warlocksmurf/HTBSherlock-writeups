@@ -49,7 +49,11 @@ By checking the binary file, we can find the AWS URL and by entering inside it, 
 Question: Please detail all confirmed malicious IP addresses. (Ascending Order)
 <br>Answer: `45.133.193.41, 191.101.31.57`
 
-We know one of the IP address from Task 2, 192.101.31.57. Now we have to find the other. By using the command ``` ```, I managed to find the second IP address from the TA.
+We know one of the IP address from Task 2, 192.101.31.57. Now we have to find the other, which can be found using the command 
+
+```
+find . -type f -exec jq '.Records[] | [.sourceIPAddress, .userIdentity.userName] | @tsv' {} \; | sort -u
+```
 
 ![aws6](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/eca44655-1e08-447d-8fdd-8de5158b43d9)
 
