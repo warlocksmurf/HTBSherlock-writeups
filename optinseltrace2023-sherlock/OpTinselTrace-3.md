@@ -38,7 +38,7 @@ Question: What is the name of the program used by the vbs script to execute the 
 
 Using [VirusTotal](https://www.virustotal.com/gui/file/78ba1ea3ac992391010f23b346eedee69c383bc3fd2d3a125ede6cba3ce77243/behavior), we can easily find the processes of this vbs script.
 
-![vol4](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/0610eae6-e86d-47c9-a0a4-411b3f1ac6fa)
+![vol4](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/5586e600-cbf8-4606-b503-0955c8de4e92)
 
 ## Task 5 
 Question: What is the name of the function used for the powershell script obfuscation?
@@ -46,7 +46,7 @@ Question: What is the name of the function used for the powershell script obfusc
 
 Using [VirusTotal](https://www.virustotal.com/gui/file/78ba1ea3ac992391010f23b346eedee69c383bc3fd2d3a125ede6cba3ce77243/behavior), we can easily find the fuction.
 
-![vol5](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/5586e600-cbf8-4606-b503-0955c8de4e92)
+![vol5](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/0610eae6-e86d-47c9-a0a4-411b3f1ac6fa)
 
 ## Task 6
 Question: What is the URL that the next stage was downloaded from?
