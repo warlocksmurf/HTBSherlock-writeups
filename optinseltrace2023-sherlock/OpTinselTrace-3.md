@@ -96,7 +96,7 @@ Question: What is the full path of the folder that was excluded from defender?
 Question: What is the original name of the file that was ingressed to the victim?
 <br>Answer: `procdump.exe`
 
-Since the question wants the original name, the exe file has to be extracted via Volatility and scanned on [VirusTotal](https://www.virustotal.com/gui/file/337c24c2e6016a9bdca30f2820df9c1dae7b827ad73c93a14e1dc78906b63890).
+Since the question wants the original name, the PresentForNaughtyChild.exe file has to be extracted via Volatility first before analyzing it on [VirusTotal](https://www.virustotal.com/gui/file/337c24c2e6016a9bdca30f2820df9c1dae7b827ad73c93a14e1dc78906b63890).
 
 ![vol10](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/668649dc-da33-4e1c-8e4c-55d5d88b677f)
 ![vol11](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/2ff6fc76-efc0-4414-9182-336c8408e026)
