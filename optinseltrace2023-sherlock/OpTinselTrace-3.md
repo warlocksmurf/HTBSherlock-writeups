@@ -60,7 +60,7 @@ Using [VirusTotal](https://www.virustotal.com/gui/file/78ba1ea3ac992391010f23b34
 Question: What is the IP and port that the executable downloaded the shellcode from (IP:Port)?
 <br>Answer: `77.74.198.52:445`
 
-For this question, we have to analyze the whole executable instead of the vbs only. So we used [VirusTotal](https://www.virustotal.com/gui/file/31ef280a565a53f1432a1292f3d3850066c0ae8af18a4824e59ac6be3aa6ea9c/detection) again and found the IP address and port.
+For this question, we have to analyze the whole zip file instead of the vbs file. As shown in [VirusTotal](https://www.virustotal.com/gui/file/31ef280a565a53f1432a1292f3d3850066c0ae8af18a4824e59ac6be3aa6ea9c/detection)  the IP address and port can be found.
 
 ![vol7](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/637619cd-daef-4d59-bb29-e290673eb7b4)
 
