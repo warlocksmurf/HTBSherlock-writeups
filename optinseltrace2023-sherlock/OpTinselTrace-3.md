@@ -54,7 +54,7 @@ Question: What is the URL that the next stage was downloaded from?
 
 Using [VirusTotal](https://www.virustotal.com/gui/file/78ba1ea3ac992391010f23b346eedee69c383bc3fd2d3a125ede6cba3ce77243/behavior), we can easily find the HTTP request.
 
-![vol6](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/57a16134-2c24-4673-a358-22e24d588f74)
+![vol6](https://www.virustotal.com/gui/file/78ba1ea3ac992391010f23b346eedee69c383bc3fd2d3a125ede6cba3ce77243/behavior)
 
 ## Task 7
 Question: What is the IP and port that the executable downloaded the shellcode from (IP:Port)?
