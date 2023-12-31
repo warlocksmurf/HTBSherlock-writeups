@@ -94,7 +94,7 @@ Similar to Task 6.
 Question: Based on the analysis completed Santa Claus has asked for some advice. What is the ARN of the S3 Bucket that requires locking down?
 <br>Answer: `arn:aws:s3:::papa-noel`
 
-Similar to Task 5, checking the binary file we can find the ARM of the S3 Bucket or by using this command
+Using this command, we can find the ARM of the S3 Bucket via the compromised AWS account's GetObject requests. 
 
 ```
 find . -type f -exec jq '.Records[] | [.sourceIPAddress=="191.101.31.57", .eventName=="GetObject", .requestParameters.bucketName, .resources[0].ARN] | @tsv' {} \; | sort -u
