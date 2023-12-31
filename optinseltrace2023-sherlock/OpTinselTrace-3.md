@@ -60,7 +60,7 @@ Using [VirusTotal](https://www.virustotal.com/gui/file/78ba1ea3ac992391010f23b34
 Question: What is the IP and port that the executable downloaded the shellcode from (IP:Port)?
 <br>Answer: `77.74.198.52:445`
 
-Using [VirusTotal](https://www.virustotal.com/gui/file/31ef280a565a53f1432a1292f3d3850066c0ae8af18a4824e59ac6be3aa6ea9c/behavior), we can easily find the HTTP request.
+Using ![VirusTotal](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/8e2a183f-c28b-4222-8066-d4ef975877a5), we can easily find the HTTP request.
 
 ## Task 8
 Question: What is the process ID of the remote process that the shellcode was injected into?
