@@ -3,19 +3,19 @@
 ![optinsel](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/654c5f51-6cbf-4834-84af-fbddf08e4849)
 
 ## Sherlocks
-### OpTinselTrace-1
+### OpTinselTrace-1: Insider threat (Dec 17, 2023)
 [Solution](OpTinselTrace-1.md)
 
-### OpTinselTrace-2
+### OpTinselTrace-2: S3 exposure and theft (Dec 18, 2023)
 [Solution](OpTinselTrace-2.md)
 
-### OpTinselTrace-3
+### OpTinselTrace-3: Memory forensics (Dec 20, 2023)
 [Solution](OpTinselTrace-3.md)
 
-### OpTinselTrace-4
+### OpTinselTrace-4: Printer compromise (Dec 21, 2023)
 [Solution](OpTinselTrace-4.md)
 
-### OpTinselTrace-5
+### OpTinselTrace-5: Ransomware (Dec 23, 2023)
 [Solution](OpTinselTrace-5.md)
 
 ## Final Results
