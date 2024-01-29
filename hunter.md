@@ -85,6 +85,5 @@ SSN were also part of the sensitive project which was exfiltrated by the attacke
 We believe the domain admin credentials have been leaked in this incident. Please confirm the Domain Admin password?
 <br>Answer: `eM client`
 
-## Score
+## Final Results
 ![Hunter](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/330b05c7-0c05-4d45-8f81-05448befbd62)
-
