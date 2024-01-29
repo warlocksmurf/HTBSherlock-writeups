@@ -4,4 +4,6 @@
 [Hack The Boo 2023](hacktheboo2023-ctf/README.md)
 
 ## Sherlocks
+[Hunter](optinseltrace2023-sherlock/README.md)
+
 [Operation Tinsel Trace 2023](optinseltrace2023-sherlock/README.md)
