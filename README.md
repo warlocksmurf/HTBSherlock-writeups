@@ -7,3 +7,5 @@
 
 ## CTFs
 [Hack The Boo 2023](hacktheboo2023-ctf/README.md)
+
+[Cyber Apocalypse 2024: Hacker Royale](cyberapocalypse2024-ctf/README.md)
