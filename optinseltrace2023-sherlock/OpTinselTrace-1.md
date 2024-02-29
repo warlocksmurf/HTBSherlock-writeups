@@ -8,7 +8,7 @@ Santa is very busy with his naughty and nice list, so he’s put you in charge o
 Question: What is the name of the email client that Elfin is using?
 <br>Answer: `eM client`
 
-Pretty straightforward, just analyze files inside the user Elfin.
+Since the question is asking for Elfin's email client, it is probably a program downloaded in his machine. Hence, I went ahead to `\optinseltrace1\TriageData\C\users\Elfin\Appdata` and looked around both the Local and Roaming directory. In the Roaming directory, eM client was found.
 
 ![elf1](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/e5c6d693-0ff3-4c2c-baba-a171661c3781)
 
@@ -16,8 +16,8 @@ Pretty straightforward, just analyze files inside the user Elfin.
 Question: What is the email the threat is using?
 <br>Answer: `definitelynotthegrinch@gmail.com`
 
-One easy way to solve this whole Sherlock is to just utilize the email client (eM client) to search for clues about Elfin and the TA.
-After importing the xml file, we can see the Grinch sending an email to Elfin!
+One easy way to solve this whole Sherlock is to just utilize the email client to search for clues about Elfin and the TA.
+After importing the configuration files, we can see the Grinch sending an email to Elfin!
 
 ![elf2](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/6caa0bd8-5b3f-4f0f-9469-95befbb47208)
 
@@ -73,10 +73,9 @@ Pretty straightforward, just look through the emails from Elfin and wendy elflow
 Question: What is the search string for the first suspicious google search from Elfin? (Format: string)
 <br>Answer: `how to get around work security`
 
-Since I did not have a Google History viewer tool, I just manually analyze using Notepad 💀 Using Notepad, I managed to find suspicious search results.
-<br>Path: ``\optinseltrace1\TriageData\C\users\Elfin\Appdata\Local\Google\Chrome\User Data\Default\History``
+Since the question asked about Google search, I assume we have to analyze the Elfin's browser history on Google. So I extracted several Chrome artifacts located in `\optinseltrace1\TriageData\C\users\Elfin\Appdata\Local\Google\Chrome\User Data\Default\` and analyzed them using DB Browser. There were several suspicious search results found in the `History` file.
 
-![elf9](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/a63dbd8d-d367-4bae-b6b1-50067369c7d8)
+![elf9](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/310bac04-9440-41d5-88f3-57cc8ca9568c)
 
 ## Task 10
 Question: What is the name of the author who wrote the article from the CIA field manual?
@@ -84,20 +83,20 @@ Question: What is the name of the author who wrote the article from the CIA fiel
 
 Similar to Task 9, you can find the article search results.
 
-![elf10](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/54f1eb1f-194c-4e66-b733-239bc68d5da0)
+![elf10](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/a77cb620-31ea-4402-903d-b2d2df597fe8)
 ![elf10 1](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/6e956313-279f-4e3b-8f78-2025d5d4fee8)
 
 ## Task 11
 Question: What is the name of Santas secret file that Elfin sent to the actor?
 <br>Answer: `santa_deliveries.zip`
 
-The secret file can be found in Elfin's user directory.
+The secret file can be found in Elfin's machine located in `\optinseltrace1\TriageData\C\users\Elfin\Appdata\Roaming\top-secret\`
 
 ## Task 12
 Question: According to the filesystem, what is the exact CreationTime of the secret file on Elfins host?
 <br>Answer: `2023-11-28 17:01:29`
 
-One way to always find the exact CreationTime is to just use the $MFT data and Timeline Explorer.
+One way to find the exact 'CreationTime' is to use the $MFT artifact. This can be done using MFTECmd and Timeline Explorer.
 
 ![elf12](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/ffe00ae6-7e0b-4fe5-b87d-fc6846ff5797)
 
@@ -111,9 +110,9 @@ Similar to Task 11.
 Question: What is the name of the bar that Elfin offers to meet the threat actor at?
 <br>Answer: `Greece`
 
-Similar to Task 9, you can find suspicious search results about flying to Greece from North Pole.
+Similarly, you can find suspicious search results about flying to Greece from North Pole on Google Chrome.
 
-![elf14](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/6f82795c-6eb3-49c4-975a-52c979c1a5b3)
+![image](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/f51eb564-1125-4591-9e94-d27b03dcef27)
 
 ## Task 15
 Question: What is the email address of the apology letter the user (elfin) wrote out but didn’t send?
