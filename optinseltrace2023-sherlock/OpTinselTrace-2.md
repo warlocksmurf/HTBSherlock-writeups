@@ -2,7 +2,6 @@
 It seems our precious technology has been leaked to the threat actor. Our head Elf, PixelPepermint, seems to think that there were some hard-coded sensitive URLs within the technology sent. 
 Please audit our Sparky Cloud logs and confirm if anything was stolen! PS - Santa likes his answers in UTC...
 
-# Solution
 ## Task 1 
 Question: What is the MD5 sum of the binary the Threat Actor found the S3 bucket location in?
 <br>Answer: `62d5c1f1f9020c98f97d8085b9456b05`
