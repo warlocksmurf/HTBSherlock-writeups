@@ -3,7 +3,6 @@ An elf named "Elfin" has been acting rather suspiciously lately. He's been worki
 Santa's network of intelligence elves has told Santa that the Grinch got a little bit too tipsy on egg nog and made mention of an insider elf! 
 Santa is very busy with his naughty and nice list, so he’s put you in charge of figuring this one out. Please audit Elfin’s workstation and email communications.
 
-# Solution
 ## Task 1 
 Question: What is the name of the email client that Elfin is using?
 <br>Answer: `eM client`
