@@ -166,7 +166,7 @@ Question: What is the handle of the attacker?
 
 Answer: `pwnmaster12`
 
-This question was pretty vague where I had to ask certain HTB players about what I should be doing. @tmechen mentioned that the attacker actually left a note for Velma after exfiltrating the data, so I assumed the note must be recovered to analyze its content. First I had to identify the note, going through the sysmon logs again, I found out that the note must be called `learn.txt` located in `C:\Users\Velma\Pictures\`.
+This question was pretty vague where I had to ask certain HTB players about what I should be doing. @tmechen mentioned that the attacker actually left a note for Velma after exfiltrating the data, so I assumed the note must be recovered to analyze its content. First I had to identify the note, going through the sysmon logs again (without cmd filter), I found out that the note must be called `learn.txt` located in `C:\Users\Velma\Pictures\`.
 
 ![Handle1](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/c54e4269-943a-4b6a-b8fe-90f365ebc9a2)
 
