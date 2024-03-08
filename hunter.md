@@ -3,7 +3,6 @@ A SOC analyst received an alert about possible lateral movement and credential s
 Upon further analysis and network analysis by senior soc analyst it was confirmed that an attack took place. As part of incident response team you are assigned the incident ticket. The network capture device had some performance issues from some time so we unable to capture all traffic. 
 You are provided with the Artifacts acquired from the endpoint and the limited network capture for analysis. Now it's your duty to conduct a deep dive with the provided data sources to understand how did the incident occured.
 
-# Solution
 ## Task 1
 What is the mitre technique ID of the tactic used by the attacker to gain initial access to the system?
 
