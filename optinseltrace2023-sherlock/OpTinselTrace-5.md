@@ -1,7 +1,6 @@
 # Sherlock Scenario
 You'll notice a lot of our critical server infrastructure was recently transferred from the domain of our MSSP - Forela.local over to Northpole.local. We actually managed to purchase some second hand servers from the MSSP who have confirmed they are as secure as Christmas is! It seems not as we believe christmas is doomed and the attackers seemed to have the stealth of a clattering sleigh bell, or they didn’t want to hide at all!!!!!! We have found nasty notes from the Grinch on all of our TinkerTech workstations and servers! Christmas seems doomed. Please help us recover from whoever committed this naughty attack!
 
-# Solution
 ## Task 1 
 Question: Which CVE did the Threat Actor (TA) initially exploit to gain access to DC01?
 <br>Answer: `CVE-2020-1472`
