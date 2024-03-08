@@ -1,7 +1,6 @@
 # Sherlock Scenario
 Oh no! Our IT admin is a bit of a cotton-headed ninny-muggins, ByteSparkle left his VPN configuration file in our fancy private S3 location! The nasty attackers may have gained access to our internal network. We think they compromised one of our TinkerTech workstations. Our security team has managed to grab you a memory dump - please analyse it and answer the questions! Santa is waiting…
 
-# Solution
 ## Task 1 
 Question: What is the name of the file that is likely copied from the shared folder (including the file extension)?
 <br>Answer: `present_for_santa.zip`
