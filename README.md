@@ -3,11 +3,11 @@
 
 [OpTinselTrace 1-5](optinseltrace2023-sherlock/README.md)
 
-[Hunter](hunter-sherlock/README.md)
+[Hunter](hunter-sherlock)
 
-[BOughT](bought-sherlock/README.md)
+[BOughT](bought-sherlock)
 
-[Jinkies](jinkies-sherlock/README.md)
+[Jinkies](jinkies-sherlock)
 
 ## CTFs
 ![hack-the-box](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/f1ce52b6-eab4-44f4-8cb3-ccf55d127064)
