@@ -173,7 +173,7 @@ This question was pretty vague where I had to ask certain HTB players about what
 So I went on to use `MFTEcmd` to carve out the contents of this note using its offset that can be obtained in the MFT. Inside the note, the attacker's handle can be obtained.
 
 ```
-.\MFTECmd.exe -f 'C:\Users\ooiro\Documents\sharedfolder\HackTheBox\Sherlocks\jinkies\Jinkies_KAPE_output\TriageData\C\$MFT' --de 78533
+.\MFTECmd.exe -f 'C:\Users\ooiro\Jinkies_KAPE_output\TriageData\C\$MFT' --de 78533
 ```
 
 ![Task 12 Handle2](https://github.com/warlocksmurf/HTB-writeups/assets/121353711/6718bfb5-441f-4c32-984d-bc942cd29df5)
